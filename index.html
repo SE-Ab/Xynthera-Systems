@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Xynthera Systems — Custom software development for growing businesses. Web apps, mobile apps, AI software, and management systems built for SMBs across India." />
+  <title>Xynthera Systems — Software That Works For Your Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__wrap">
+      <a href="#" class="nav__logo" aria-label="Xynthera Systems home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M6 6 L20 20 L6 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M34 6 L20 20 L34 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="logo-text">Xynthera<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="nav__links" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#stack">Stack</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--primary btn--sm">Book a call</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav__mobile" id="navMobile" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#stack">Stack</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--primary">Book a call</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <div class="hero__glow"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__tag reveal">
+        <span class="pulse"></span>
+        Now booking projects — April 2026
+      </div>
+
+      <h1 class="hero__title reveal" style="--d:.05s">
+        Software that actually
+        <span class="serif italic">moves the needle</span>
+        for your business.
+      </h1>
+
+      <p class="hero__sub reveal" style="--d:.15s">
+        We build custom web apps, mobile apps, and management systems for growing
+        businesses across India. Fixed quotes. Honest timelines. Senior engineers
+        on every project.
+      </p>
+
+      <div class="hero__cta reveal" style="--d:.25s">
+        <a href="#contact" class="btn btn--primary btn--lg">
+          Start a project
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+        <a href="#work" class="btn btn--ghost btn--lg">See our work</a>
+      </div>
+
+      <div class="hero__proof reveal" style="--d:.35s">
+        <div class="proof-stat">
+          <div class="proof-stat__num">30+</div>
+          <div class="proof-stat__label">Projects delivered</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <div class="proof-stat__num">6</div>
+          <div class="proof-stat__label">Industries served</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <div class="proof-stat__num">4.9<span>/5</span></div>
+          <div class="proof-stat__label">Avg. client rating</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-stat">
+          <div class="proof-stat__num">IN</div>
+          <div class="proof-stat__label">Based in India</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Web Applications</span><span class="dot">●</span>
+      <span>Mobile Apps</span><span class="dot">●</span>
+      <span>AI Software</span><span class="dot">●</span>
+      <span>Food Delivery Platforms</span><span class="dot">●</span>
+      <span>Healthcare Systems</span><span class="dot">●</span>
+      <span>Learning Management</span><span class="dot">●</span>
+      <span>Appointment Booking</span><span class="dot">●</span>
+      <span>Sports Management</span><span class="dot">●</span>
+      <!-- duplicate for seamless loop -->
+      <span>Web Applications</span><span class="dot">●</span>
+      <span>Mobile Apps</span><span class="dot">●</span>
+      <span>AI Software</span><span class="dot">●</span>
+      <span>Food Delivery Platforms</span><span class="dot">●</span>
+      <span>Healthcare Systems</span><span class="dot">●</span>
+      <span>Learning Management</span><span class="dot">●</span>
+      <span>Appointment Booking</span><span class="dot">●</span>
+      <span>Sports Management</span><span class="dot">●</span>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <div class="eyebrow"><span></span>What we build</div>
+        <h2 class="section__title">Seven services.<br /><span class="serif italic">One team</span> that owns the whole
+          stack.</h2>
+        <p class="section__desc">
+          From a first sketch to production hosting, we handle every piece of the
+          software supply chain — so you never need to juggle agencies, freelancers,
+          and server guys.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card" data-accent>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="4" width="18" height="14" rx="2" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="18" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>Web Applications</h3>
+          <p>Dashboards, portals, internal tools, and customer-facing platforms that scale.</p>
+          <ul class="tag-list">
+            <li>Angular</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="7" y="2" width="10" height="20" rx="2" />
+              <line x1="11" y1="18" x2="13" y2="18" />
+            </svg>
+          </div>
+          <h3>Mobile Apps</h3>
+          <p>iOS and Android apps from one React Native codebase — faster shipping, lower cost.</p>
+          <ul class="tag-list">
+            <li>React Native</li>
+            <li>iOS</li>
+            <li>Android</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M3 3h7v7H3z" />
+              <path d="M14 3h7v7h-7z" />
+              <path d="M14 14h7v7h-7z" />
+              <path d="M3 14h7v7H3z" />
+            </svg>
+          </div>
+          <h3>Management Systems</h3>
+          <p>Appointments, bookings, CRM, inventory — systems that replace a dozen spreadsheets.</p>
+          <ul class="tag-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 10h8" />
+              <path d="M8 14h5" />
+            </svg>
+          </div>
+          <h3>Food Delivery Platforms</h3>
+          <p>Full three-sided apps: customer ordering, restaurant dashboard, driver tracking.</p>
+          <ul class="tag-list">
+            <li>Real-time</li>
+            <li>Payments</li>
+            <li>Maps</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path
+                d="M12 2a5 5 0 0 0-5 5v3H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-2V7a5 5 0 0 0-5-5z" />
+              <circle cx="12" cy="15" r="1.5" />
+            </svg>
+          </div>
+          <h3>AI-Powered Software</h3>
+          <p>Intelligent assistants, training tools, and automation built on modern LLM APIs.</p>
+          <ul class="tag-list">
+            <li>LLM APIs</li>
+            <li>RAG</li>
+            <li>Automation</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <h3>Professional Websites</h3>
+          <p>Fast, SEO-ready, mobile-first sites that actually convert visitors into customers.</p>
+          <ul class="tag-list">
+            <li>Next.js</li>
+            <li>SEO</li>
+            <li>Analytics</li>
+          </ul>
+        </article>
+
+        <article class="service-card service-card--wide">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+          </div>
+          <h3>Deployment &amp; Ongoing Support</h3>
+          <p>Cloud hosting, monitoring, backups, and continuous improvement — so your software keeps working long after
+            launch.</p>
+          <ul class="tag-list">
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GCP</li>
+            <li>CI/CD</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / INDUSTRIES ============ -->
+  <section class="section section--dark" id="work">
+    <div class="container">
+      <div class="section__head section__head--light">
+        <div class="eyebrow eyebrow--light"><span></span>Selected work</div>
+        <h2 class="section__title">Projects we&rsquo;ve shipped in <span class="serif italic">six industries</span>.
+        </h2>
+        <p class="section__desc">
+          Every project below is a real system we&rsquo;ve built end-to-end —
+          design, engineering, deployment, and support.
+        </p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__tag">Food &amp; Beverage</span>
+            <span class="work-card__year">2025</span>
+          </div>
+          <h3 class="work-card__title">Three-sided food delivery platform</h3>
+          <p class="work-card__desc">
+            Customer app, restaurant dashboard, and driver tracking system with
+            real-time order flow, Stripe payments, and live map routing.
+          </p>
+          <ul class="work-card__stack">
+            <li>React Native</li>
+            <li>Node</li>
+            <li>PostgreSQL</li>
+            <li>Stripe</li>
+          </ul>
+          <div class="work-card__stats">
+            <div><strong>12k+</strong><span>orders / month</span></div>
+            <div><strong>&lt; 2s</strong><span>avg. order time</span></div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__tag">Healthcare</span>
+            <span class="work-card__year">2024</span>
+          </div>
+          <h3 class="work-card__title">Doctor &amp; patient management system</h3>
+          <p class="work-card__desc">
+            End-to-end clinic software: appointment booking, digital records,
+            SMS reminders, and billing — built to cut no-shows and admin time.
+          </p>
+          <ul class="work-card__stack">
+            <li>Angular</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+          </ul>
+          <div class="work-card__stats">
+            <div><strong>−38%</strong><span>no-show rate</span></div>
+            <div><strong>6 hrs</strong><span>saved / week</span></div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__tag">Education</span>
+            <span class="work-card__year">2024</span>
+          </div>
+          <h3 class="work-card__title">Learning management platform</h3>
+          <p class="work-card__desc">
+            Course authoring, live-class scheduling, quizzes, and progress
+            tracking — for a training academy serving 2,000+ active students.
+          </p>
+          <ul class="work-card__stack">
+            <li>React</li>
+            <li>Python</li>
+            <li>Django</li>
+          </ul>
+          <div class="work-card__stats">
+            <div><strong>2k+</strong><span>active students</span></div>
+            <div><strong>99.9%</strong><span>uptime</span></div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__tag">AI / EdTech</span>
+            <span class="work-card__year">2025</span>
+          </div>
+          <h3 class="work-card__title">AI software trainer</h3>
+          <p class="work-card__desc">
+            Interactive AI-guided tutor that walks users through software
+            workflows step-by-step, with adaptive prompts and progress tracking.
+          </p>
+          <ul class="work-card__stack">
+            <li>React</li>
+            <li>Python</li>
+            <li>OpenAI API</li>
+          </ul>
+          <div class="work-card__stats">
+            <div><strong>4&times;</strong><span>faster onboarding</span></div>
+            <div><strong>92%</strong><span>completion rate</span></div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__tag">Sports &amp; Fitness</span>
+            <span class="work-card__year">2023</span>
+          </div>
+          <h3 class="work-card__title">Sports management platform</h3>
+          <p class="work-card__desc">
+            Team rosters, player stats, match scheduling, and live event
+            tracking — used by regional leagues to run entire seasons.
+          </p>
+          <ul class="work-card__stack">
+            <li>Angular</li>
+            <li>Java</li>
+            <li>WebSockets</li>
+          </ul>
+          <div class="work-card__stats">
+            <div><strong>48</strong><span>teams onboarded</span></div>
+            <div><strong>100%</strong><span>season coverage</span></div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card__meta">
+            <span class="work-card__tag">Services &amp; SMB</span>
+            <span class="work-card__year">2024</span>
+          </div>
+          <h3 class="work-card__title">Appointment booking platform</h3>
+          <p class="work-card__desc">
+            Multi-location scheduling system with staff calendars, online
+            payments, and automated reminders — replacing a tangle of
+            spreadsheets and phone calls.
+          </p>
+          <ul class="work-card__stack">
+            <li>React</li>
+            <li>Node</li>
+            <li>Stripe</li>
+          </ul>
+          <div class="work-card__stats">
+            <div><strong>+41%</strong><span>bookings</span></div>
+            <div><strong>−5 hrs</strong><span>admin / week</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section__head">
+        <div class="eyebrow"><span></span>How we work</div>
+        <h2 class="section__title">A five-step process.<br /><span class="serif italic">No black boxes.</span></h2>
+        <p class="section__desc">
+          You&rsquo;ll know exactly what&rsquo;s happening every week, with a demo
+          every Friday and a fixed scope from day one.
+        </p>
+      </div>
+
+      <ol class="process-list">
+        <li class="process-step">
+          <div class="process-step__num">01</div>
+          <div class="process-step__body">
+            <h3>Free consultation</h3>
+            <p>30-minute call to understand your business, your bottleneck, and whether software is even the right
+              answer.</p>
+          </div>
+          <div class="process-step__when">Day 1</div>
+        </li>
+        <li class="process-step">
+          <div class="process-step__num">02</div>
+          <div class="process-step__body">
+            <h3>Tailored proposal</h3>
+            <p>Fixed scope, fixed price, clear timeline — delivered within 3 business days, no pressure to sign.</p>
+          </div>
+          <div class="process-step__when">Week 1</div>
+        </li>
+        <li class="process-step">
+          <div class="process-step__num">03</div>
+          <div class="process-step__body">
+            <h3>Agile delivery</h3>
+            <p>Weekly demos every Friday. You see real progress, flag issues early, and nothing gets built in the dark.
+            </p>
+          </div>
+          <div class="process-step__when">Weeks 2–N</div>
+        </li>
+        <li class="process-step">
+          <div class="process-step__num">04</div>
+          <div class="process-step__body">
+            <h3>Launch &amp; handover</h3>
+            <p>Deployment to your cloud, full documentation, and a training session for your team — so nothing is a
+              mystery.</p>
+          </div>
+          <div class="process-step__when">Launch week</div>
+        </li>
+        <li class="process-step">
+          <div class="process-step__num">05</div>
+          <div class="process-step__body">
+            <h3>Ongoing partnership</h3>
+            <p>Monthly check-ins, quick fixes, and improvements as your business grows. You&rsquo;re never on your own.
+            </p>
+          </div>
+          <div class="process-step__when">Post-launch</div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section class="section section--alt" id="stack">
+    <div class="container">
+      <div class="section__head">
+        <div class="eyebrow"><span></span>Our stack</div>
+        <h2 class="section__title">Boring, battle-tested,<br /><span class="serif italic">built to last.</span></h2>
+        <p class="section__desc">
+          We use the tools that power Netflix, Uber, and your bank — not whatever
+          was trending on Twitter last month.
+        </p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-col">
+          <h4 class="stack-col__title">Frontend</h4>
+          <ul>
+            <li><span class="dot-accent"></span>Angular</li>
+            <li><span class="dot-accent"></span>React</li>
+            <li><span class="dot-accent"></span>React Native</li>
+            <li><span class="dot-accent"></span>Next.js</li>
+            <li><span class="dot-accent"></span>TypeScript</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4 class="stack-col__title">Backend</h4>
+          <ul>
+            <li><span class="dot-accent"></span>Java &amp; Spring</li>
+            <li><span class="dot-accent"></span>Python &amp; Django</li>
+            <li><span class="dot-accent"></span>Node.js</li>
+            <li><span class="dot-accent"></span>REST &amp; GraphQL</li>
+            <li><span class="dot-accent"></span>WebSockets</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4 class="stack-col__title">Data</h4>
+          <ul>
+            <li><span class="dot-accent"></span>PostgreSQL</li>
+            <li><span class="dot-accent"></span>MongoDB</li>
+            <li><span class="dot-accent"></span>Redis</li>
+            <li><span class="dot-accent"></span>Elasticsearch</li>
+            <li><span class="dot-accent"></span>S3</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4 class="stack-col__title">Cloud &amp; DevOps</h4>
+          <ul>
+            <li><span class="dot-accent"></span>AWS</li>
+            <li><span class="dot-accent"></span>Azure</li>
+            <li><span class="dot-accent"></span>GCP</li>
+            <li><span class="dot-accent"></span>Docker &amp; K8s</li>
+            <li><span class="dot-accent"></span>GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIAL ============ -->
+  <section class="section testimonial">
+    <div class="container">
+      <figure class="quote">
+        <svg class="quote__mark" viewBox="0 0 48 36" fill="none" aria-hidden="true">
+          <path
+            d="M0 36V20C0 8.96 8.96 0 20 0v8c-6.62 0-12 5.38-12 12v4h12v12H0zm28 0V20C28 8.96 36.96 0 48 0v8c-6.62 0-12 5.38-12 12v4h12v12H28z"
+            fill="currentColor" fill-opacity=".15" />
+        </svg>
+        <blockquote>
+          <p>
+            We&rsquo;d been burned twice by agencies before Xynthera. They actually
+            listened, shipped a working booking system in six weeks, and still
+            pick up the phone a year later when we need changes.
+          </p>
+        </blockquote>
+        <figcaption>
+          <div class="quote__person">
+            <div class="quote__avatar">AP</div>
+            <div>
+              <div class="quote__name">Arjun P.</div>
+              <div class="quote__role">Owner, Dental Clinic &middot; Bengaluru</div>
+            </div>
+          </div>
+          <div class="quote__stars" aria-label="5 out of 5 stars">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head section__head--left">
+        <div class="eyebrow"><span></span>Common questions</div>
+        <h2 class="section__title">Good questions<br />from people like you.</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq__item">
+          <summary>
+            <span>How much does a typical project cost?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__body">
+            <p>
+              It depends on scope, but most small business projects land between
+              &#8377;1,50,000 and &#8377;8,00,000. We give you a fixed quote upfront
+              &mdash; no hourly surprises. A simple website is closer to the
+              lower end; a full booking platform with mobile apps is closer to
+              the upper end.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            <span>How long does it take to build something?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__body">
+            <p>
+              An MVP typically ships in 4–8 weeks. Larger systems take 2–4
+              months. We break everything into weekly milestones so you see
+              working software from week two, not at the end.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            <span>Do you work with businesses across India?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__body">
+            <p>
+              Yes. We serve clients from Mumbai, Delhi, Bengaluru, Hyderabad,
+              Chennai, Pune, and beyond &mdash; in English or Hindi, whichever
+              you prefer. Calls happen on your schedule (IST), and we&rsquo;re
+              always just a WhatsApp message away.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            <span>What happens after the project ships?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__body">
+            <p>
+              We offer optional monthly support plans starting at
+              &#8377;15,000/month &mdash; covering hosting, monitoring, small
+              changes, and priority bug fixes. If you want to take it fully
+              in-house, we hand over clean, documented code.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            <span>Do I own the code you write?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__body">
+            <p>
+              100%. Every line of code, every design file, every database — yours
+              on day one, delivered through your own GitHub or GitLab. No
+              vendor lock-in, ever.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>
+            <span>Can you work with an existing system?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__body">
+            <p>
+              Absolutely. We take over, audit, and improve existing codebases
+              regularly. If your previous developer left you stuck, we can
+              usually get you unstuck within a week.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / CTA ============ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__wrap">
+
+        <div class="contact__left">
+          <div class="eyebrow eyebrow--light"><span></span>Let&rsquo;s talk</div>
+          <h2 class="contact__title">
+            Tell us about your project.<br />
+            <span class="serif italic">We&rsquo;ll reply within 24 hours.</span>
+          </h2>
+          <p class="contact__desc">
+            No obligation. No pressure. Just a real conversation about what
+            you&rsquo;re trying to build and whether we&rsquo;re the right team
+            to help.
+          </p>
+
+          <ul class="contact__info">
+            <li>
+              <span class="contact__info-label">Email</span>
+              <a href="mailto:hello@xynthera.systems">hello@xynthera.systems</a>
+            </li>
+            <li>
+              <span class="contact__info-label">India</span>
+              <a href="tel:+910000000000">+91 00000 00000</a>
+            </li>
+            <li>
+              <span class="contact__info-label">WhatsApp</span>
+              <a href="https://wa.me/910000000000" target="_blank" rel="noopener">+91 00000 00000</a>
+            </li>
+            <li>
+              <span class="contact__info-label">Hours</span>
+              <span>Mon&ndash;Sat &middot; 10:00&ndash;19:00 IST</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Rahul Sharma" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option value="">Choose a service…</option>
+              <option>Web application</option>
+              <option>Mobile app</option>
+              <option>Management system</option>
+              <option>Food delivery platform</option>
+              <option>AI-powered software</option>
+              <option>Professional website</option>
+              <option>Not sure yet — let&rsquo;s talk</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="budget">Rough budget</label>
+            <div class="chips" role="radiogroup" aria-label="Budget">
+              <label class="chip"><input type="radio" name="budget" value="under-1L" /><span>Under
+                  &#8377;1L</span></label>
+              <label class="chip"><input type="radio" name="budget" value="1-3L" /><span>&#8377;1L &ndash;
+                  &#8377;3L</span></label>
+              <label class="chip"><input type="radio" name="budget" value="3-10L" /><span>&#8377;3L &ndash;
+                  &#8377;10L</span></label>
+              <label class="chip"><input type="radio" name="budget" value="10L+" /><span>&#8377;10L+</span></label>
+              <label class="chip"><input type="radio" name="budget" value="unsure" /><span>Not sure</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" rows="4" placeholder="What problem are you trying to solve?"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">
+            Send message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </button>
+
+          <p class="form-note">
+            By submitting, you agree to our privacy policy. We&rsquo;ll never
+            share your details.
+          </p>
+
+          <div class="form-success" id="formSuccess" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <div>
+              <strong>Message sent!</strong>
+              <span>We&rsquo;ll reply within 24 hours.</span>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M6 6 L20 20 L6 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M34 6 L20 20 L34 34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </span>
+          <span class="logo-text">Xynthera<span class="logo-dot">.</span></span>
+        </a>
+        <p class="footer__tag">
+          Software that actually<br />moves the needle.
+        </p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Web apps</a></li>
+            <li><a href="#services">Mobile apps</a></li>
+            <li><a href="#services">Management systems</a></li>
+            <li><a href="#services">AI software</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#work">Our work</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#stack">Tech stack</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@xynthera.systems">hello@xynthera.systems</a></li>
+            <li><a href="tel:+918052617017">+91 8052617017</a></li>
+            <li><a href="#contact">Book a call</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small>© 2026 Xynthera Systems. All rights reserved.</small>
+      <small>Built with craft in India &middot; Made with &hearts;</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
